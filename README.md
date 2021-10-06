@@ -15,3 +15,6 @@
 Date Format - Date is written in string as 'YYYY-MM-DD'
 
 **LIKE** - Similar values ('SELECT * FROM customers WHERE last_name LIKE 'b%'' It will select customers whose last name starts with b, case-insensitive, % means any length of characters, _ means single character)
+
+**REGEXP** - String pattern matching ('SELECT * FROM customers WHERE last_name REGEXP 'field'' It will select rows where customer last name contains 'field') ^ means start of the string and $ means end of the string. | used for or operator. [] to match multiple expressions. [gim]e means ge or ie or me. [a-h]e means ae, be, ce, de, ee, fe, ge or he. 
+
