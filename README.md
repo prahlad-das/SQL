@@ -20,4 +20,9 @@ Date Format - Date is written in string as 'YYYY-MM-DD'
 
 **IS NULL** - Returns rows with NULL values ('SELECT * FROM customers WHERE phone IS NULL' It will return all the customers whose phone number is null)
 
-**ORDER BY** - Return results ordered by particular column (SELECT)
+**ORDER BY** - Return results ordered by particular column ('SELECT * FROM customers ORDER BY state DESC, first_name' It will return customers in order by state and first name)
+Use 'DESC' for descending order. 
+
+**LIMIT** - Limits the rows in a query ('SELECT * FROM customers LIMIT 6,3' It will skip first 6 rows and return next 3 rows)
+
+**JOIN** - Joins two tables ('SELECT * FROM orders JOIN customers ON orders.customer_id = customers.customer_id' It will return columns from both the tables matching customer ids.) For joining tables from different databases, just prefix the name of the database which is not current. 
